@@ -27,7 +27,7 @@ public class Permutation
                 str = swap(str,l,i);
                 permute(str, l+1, r);
                 str = swap(str,l,i);
-            }
+            } // test here
         }
     }
 

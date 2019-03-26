@@ -75,6 +75,7 @@ public class ThreeUniqueElementSums
         }
 
         int sumOfTwo = numberArray[firstPosition]+numberArray[secondPosition];
+        //      int[] numberArray = {-1, 0, 1, 2, -1, -4};
         for(int i= 0; i<afterFinalTwoDeleted.length; i++)
         {
             if(sumOfTwo+afterFinalTwoDeleted[i]==target)
