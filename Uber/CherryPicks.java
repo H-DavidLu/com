@@ -38,4 +38,10 @@ It is guaranteed that grid[0][0] and grid[N-1][N-1] are not -1.
  */
 public class CherryPicks
 {
+
+    public static void main(String args[])
+    {
+
+    }
+
 }
