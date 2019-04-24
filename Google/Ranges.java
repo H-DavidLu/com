@@ -1,4 +1,4 @@
-package com.YouTube;
+package com.Google;
 /*
 Given a sorted integer array nums, where the range of elements are in the inclusive range [lower, upper],
 return its missing ranges.
@@ -14,10 +14,7 @@ high.
 This solution is for the type 1 first. The solution to the type 2 will come later.
  */
 
-import com.Zillow.StringConvertToIntegers;
-
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Ranges
 {

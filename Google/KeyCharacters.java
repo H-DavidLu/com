@@ -39,6 +39,7 @@ public class KeyCharacters
         System.out.println(Arrays.toString(splitedString));
         KeyCharacters keyCharacters =  new KeyCharacters();
         keyCharacters.mergegKyesCharacters(k,original,splitedString);
+
     }
 
     String firstElement = "";

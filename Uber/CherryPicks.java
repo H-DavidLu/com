@@ -44,4 +44,61 @@ public class CherryPicks
 
     }
 
-}
+    public int cherryPickup(int[][] grid)
+    {
+
+
+        if(grid.length==0 || grid == null)
+        {
+            return 0;
+
+        }
+
+
+        int cherries = 0;
+
+        for(int i= 0; i< grid.length ; i++)
+        {
+            for(int j=0; j< grid[i].length; j++)
+            {
+
+                if (grid[i][j]== 1)
+                {
+                    cherries+= dfs(grid, i,j);
+                }
+            }
+
+        }
+        return cherries;
+    }
+
+
+    int dfs(int[][] grid, int i, int j)
+    {
+          int picks = 0;
+
+           if(grid[i][j+1]==1 && grid[i+1][j]==1 && i<grid.length)  //there is still next rows
+          {
+
+
+
+          }
+          else if(j== grid[i].length && i== grid.length) // if this is the last row without next rows
+          {
+
+
+          }
+
+          else if(grid[i][j+1]==1 && grid[i+1][j]==0 && i<grid.length) // go to the next row element
+          {
+
+
+          }
+          else if(grid[i][j+1]==0 && grid[i+1][j]==1 && i< grid.length) // go to the next right column element
+          {
+
+          }
+       return 1;
+        }
+    }
+

@@ -1,4 +1,4 @@
-package com.YouTube;
+package com.Google;
 /*
 Given a string s and a list of strings dict,
 you need to add a closed pair of bold tag <b> and </b> to wrap the substrings in s that exist in dict.
