@@ -58,9 +58,10 @@ public class Calculator2
         }
 
         // reveal the whole expressions of calculation
+        String tests = "";
         for(int i= 0; i<numberAfter.length ; i++)
         {
-           combineAl[i] = numberAfter[i] ;
+
         }
 
         System.out.println("this is the sign string with removing the spaces: "+ Arrays.toString(signAfter));
