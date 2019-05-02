@@ -53,7 +53,8 @@ public class FruitIntoBaskets {
 
     public static void main(String args[])
     {
-        int[] tree = {1,2,1};
+        int[] tree = {3,3,3,1,2,1,1,2,3,3,4};
+
         // 0,1,2,2
         FruitIntoBaskets fruitIntoBaskets = new FruitIntoBaskets();
         System.out.println(fruitIntoBaskets.totalFruit(tree));
@@ -119,13 +120,9 @@ public class FruitIntoBaskets {
         }
 
         Arrays.sort(sorted);
-
         return sorted[sorted.length - 1];
 
-
     }
-
-
 
     /*
     public int totalFruit(int[] tree) {
