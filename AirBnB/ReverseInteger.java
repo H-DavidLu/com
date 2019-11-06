@@ -30,10 +30,6 @@ public class ReverseInteger
             reverse = (reverse*10)+(test%10);
             test = test/10;
         }
-
-        if(test<0)
-            System.out.println("This is the reverse:" + "-"+ reverse);
-        else
             System.out.println("This is the reverse:" + reverse);
 
 

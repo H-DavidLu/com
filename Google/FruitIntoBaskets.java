@@ -58,7 +58,6 @@ public class FruitIntoBaskets {
         // 0,1,2,2
         FruitIntoBaskets fruitIntoBaskets = new FruitIntoBaskets();
         System.out.println(fruitIntoBaskets.totalFruit(tree));
-
     }
 
     public int totalFruit(int[] tree)

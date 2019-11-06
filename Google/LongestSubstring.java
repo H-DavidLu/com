@@ -11,14 +11,11 @@ public class LongestSubstring
 
     ArrayList<String> subStringSample =  new ArrayList<>();
 
-    public static void main(String args[])
-    {
-      String test = "aabcdfertyyujiiijklo";
-      LongestSubstring longestSubstring =  new LongestSubstring();
-      System.out.println(longestSubstring.checkLength(test) );
-      System.out.println( longestSubstring.subStringSample);
-
-
+    public static void main(String args[]) {
+        String test = "au";
+        LongestSubstring longestSubstring = new LongestSubstring();
+        System.out.println(longestSubstring.checkLength(test));
+        System.out.println(longestSubstring.subStringSample);
     }
 
     int checkLength(String str)
@@ -26,7 +23,7 @@ public class LongestSubstring
         int length = str.length();
         String substringS = "";
         ArrayList<String> subStringContainer =  new ArrayList<>();
-       // ArrayList<String> subStringSample =  new ArrayList<>();
+        int indexI=0, indexJ=0;
 
         for(int i= 0; i<length-1 ; i++)
         {
@@ -37,15 +34,19 @@ public class LongestSubstring
                 if(!substringS.contains(String.valueOf(str.charAt(j))))
                 {
                     substringS+=String.valueOf(str.charAt(j));
-
                 }
-                else
+                else // if the current element is contained in the current string ,then
                 {
-                  subStringContainer.add(str.substring(i,j));
-                  subStringSample.add(str.substring(i,j));
+                  subStringContainer.add(substringS);
+                 // subStringSample.add(str.substring(i,j));
                   break;
                 }
+                 indexI=i;
+                 indexJ=j;
+
             }
+            subStringContainer.add(str.substring(indexI,indexJ+1));
+
         }
 
         int[] subStringLengths = new int[subStringContainer.size()];
@@ -56,6 +57,5 @@ public class LongestSubstring
 
         Arrays.sort(subStringLengths);
         return subStringLengths[subStringLengths.length-1];
-
     }
 }

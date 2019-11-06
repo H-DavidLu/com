@@ -6,7 +6,7 @@ public class ReverseInteger
 
     public static void main(String args[])
     {
-        int test = 123, reverse = 0;
+        int test = -123, reverse = 0;
         while(test!=0)
         {
             reverse=reverse*10+ (test%10);
