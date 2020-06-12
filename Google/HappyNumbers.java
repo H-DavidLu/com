@@ -77,7 +77,7 @@ public class HappyNumbers {
 
     public static void main(String[] args)
     {
-        int test = 19;
+        int test = 3;
         HappyNumbers h =  new HappyNumbers();
          System.out.println( "Is this a Happy Number: "+ h.checkHappyNums(test));
     }

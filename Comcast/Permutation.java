@@ -4,7 +4,7 @@ public class Permutation
 {
     public static void main(String[] args)
     {
-        String str = "abcdd";
+        String str = "123";
         int n = str.length();
         Permutation permutation = new Permutation();
         permutation.permute(str, 0, n-1);

@@ -1,6 +1,4 @@
-package com.DailyCoding.Dropbox;
-
-import java.util.HashMap;
+package com.Dropbox;
 
 public class NumberToBinary
 {

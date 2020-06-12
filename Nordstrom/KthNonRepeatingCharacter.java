@@ -40,7 +40,6 @@ public class KthNonRepeatingCharacter
         Set<Map.Entry<String,Integer>> unduplicated = container.entrySet();
         String fetchUnduplicated ="";
         for(Map.Entry<String, Integer> entry: unduplicated ) {
-
             if(entry.getValue().equals( (Integer)(1)))
                 fetchUnduplicated+= entry.getKey();
 

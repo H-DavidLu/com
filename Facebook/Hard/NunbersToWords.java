@@ -405,7 +405,7 @@ class NunbersToWords
     }
 
     public static void main(String[] args) {
-        int num = 56585456; //2,147,483,647
+        int num = 1000010; //2,147,483,647
         NunbersToWords N = new NunbersToWords();
         System.out.println(num);
         System.out.println(N.numberToWords(num));

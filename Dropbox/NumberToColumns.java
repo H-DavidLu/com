@@ -1,7 +1,5 @@
-package com.DailyCoding.Dropbox;
+package com.Dropbox;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.HashMap;
 /*
 Good morning! Here's your coding interview problem for today.

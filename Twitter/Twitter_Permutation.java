@@ -1,4 +1,4 @@
-package com.DailyCoding.Twitter;
+package com.Twitter;
 /*
 
 NOT YET DONE!
