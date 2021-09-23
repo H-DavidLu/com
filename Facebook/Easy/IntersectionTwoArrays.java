@@ -25,14 +25,23 @@ import java.util.stream.Collectors;
 public class IntersectionTwoArrays
 {
     public static void main(String[] args) {
-        int[] nums1={4,9,5};
-        int[] nums2 = {9,4,9,8,4};
+        Integer[] nums1={4,9,5, 1,7,9,10,12,13};
+        Integer[] nums2 = {9,4,9,8,4, 5,6,7,8,12,13};
 
         IntersectionTwoArrays I= new IntersectionTwoArrays();
-        System.out.println(Arrays.toString(I.intersection(nums1,nums2)));
+        System.out.println(Arrays.toString(I.intersection2(nums1,nums2)));
 
     }
 
+    public int[] intersection2(Integer[] num1, Integer[] num2)
+    {
+        return null;
+
+    }
+
+    /*
+    // this is the first approach to do so
+    // but thi is not optimise
     public int[] intersection(int[] nums1, int[] nums2)
     {
        int length1 = nums1.length;
@@ -41,7 +50,6 @@ public class IntersectionTwoArrays
        HashSet<Integer> hashSet =  new HashSet<>();
        if(length1>length2)
        {
-
            for(int i= 0; i<length1 ; i++)
            {
                 for(int p= 0; p<length2 ; p++)
@@ -77,5 +85,7 @@ public class IntersectionTwoArrays
 
        return finalArrays;
     }
+
+     */
 }
 

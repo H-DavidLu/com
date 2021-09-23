@@ -10,6 +10,7 @@ public class Runner
         linkedList.insert(3);
         linkedList.insert(7);
         linkedList.insert(8);
+        linkedList.insert(5);
         linkedList.show();
     }
 }
